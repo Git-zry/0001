@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<script type="text/javascript">
+function s1() {
+	var a=0;
+	function s2() {
+		a++;
+		alert(a);
+	}
+	return s2;
+}
+function tt() {
+	var ss=s1();
+	alert(typeof ss);
+	var w=ss();
+	alert(ss);
+	alert(ss());
+}
+var vInput=document.getElementByTagName('input');
+var vTbody=document.getElementById('tbody');
+var vId=1;
+function testadd() {
+	var i0=vInout[0].value;
+	var i1=vInout[1].value;
+	if(i0=='0'||i1=="")
+	
+}
+
+
+oTd=document
+</script>
+<button onclick="tt()"> tt</button>
+
+<div>
+记录列表<br><br>
+姓名：<input type="text"placeholder="必填非数字"/>
+年龄：<input type="text"placeholder="必填数字"/>
+<button onclick="testadd()">添加</button><br><br>
+姓名：<input type="text"placeholder="姓名"/>
+<button onclick="testselect()">搜索</button>
+<table style="border:1px solid black;width: 600px; ">
+  <thead>
+  <tr>
+      <th style="width: 15%;text-align: left">ID</th>
+       <th style="width: 30%;text-align: left">姓名</th>
+        <th style="width: 30%;text-align: left">年龄</th>
+         <th style="width: 25%;text-align: left">操作</th>
+  </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+</body>
+</html>
