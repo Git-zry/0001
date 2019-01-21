@@ -10,7 +10,6 @@ public class redistest {
      jedis.set("A11", "a12");
      jedis.set("A11", "a13");
 	 System.out.print(jedis.get("A11"));
-	 jedis.lpush("B11", "b12","b13");
-	 System.out.print(jedis.get("B11"));
+	 
  }
 }
